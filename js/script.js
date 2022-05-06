@@ -12,7 +12,7 @@ function buttonClicked() {
     document.getElementById('answer').innerHTML = "You don't have to pay!!!";
 
     // user goes on tuesday or wednesday and is within student age
-  } else if(((day == "Tuesday") || (day == "Thurday")) || ((age >= 12) && (age <= 21))) {
+  } else if(((day == "Tuesday") || (day == "Thursday")) || ((age >= 12) && (age <= 21))) {
     document.getElementById('answer').innerHTML = "You get a student discount.";
 
     // age is negative
