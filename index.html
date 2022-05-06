@@ -51,7 +51,7 @@ Unit4-01-HTML-GuessMyNumber
     <div class="mar">
       
       <!-- Image  -->
-      <center><img src="./images/Hot-and-Cold.png" height="300px" width="auto"></center>
+      <center><img src="./images/dino-skelly.jpg" height="300px" width="auto"></center>
 
       <!-- table to put user age and day of week nex to each other -->
       <table>
@@ -60,22 +60,37 @@ Unit4-01-HTML-GuessMyNumber
             <!-- asks for user's age -->
             <p>Enter your age:</p>
             
-            <!-- MDL Numeric Textfield for user's temperature input -->
+            <!-- MDL Numeric Textfield for user's age input -->
             <form action="#">
               <div class="mdl-textfield mdl-js-textfield">
                 <input 
                   class="mdl-textfield__input" 
                   type="text" pattern="-?[0-9]*(\.[0-9]+)?" 
-                  id="temp"
-                  step="any">
-                <label class="mdl-textfield__label" for="temp">Age...</label>
+                  id="age"
+                  step="1">
+                <label class="mdl-textfield__label" for="age">Age...</label>
                 <span class="mdl-textfield__error">No no. Number please</span>
               </div>
             </form>
           </td>
           <td>
-            <!-- asks for day of week -->
-            <p>Choose a day of the week:</p>
+
+            <!-- drop down menu from W3 Schools -->
+            <!-- https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select -->
+            <form action="/action_page.php">
+              <label for="days">Choose a day:</label>
+              <select name="days" id="days">
+                <option value="nothing">---OPTIONS---</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Teusday">Teusday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+              <br><br>
+            </form>
           </td>
         </tr>
       </table>
