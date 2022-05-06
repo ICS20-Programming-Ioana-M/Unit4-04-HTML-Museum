@@ -8,11 +8,11 @@ function buttonClicked() {
 
   // If statement checks if user can go for free, with discount or pay normal price
   // user is less than 5 and more than 95 years old
-  if(age >= 5 || age <= 95){
+  if(age <= 5 || age >= 95) {
     document.getElementById('answer').innerHTML = "You don't have to pay!!!";
 
     // user goes on tuesday or wednesday and is within student age
-  } else if((day == "Tuesday" || day == "Thurday") && (age >= 12 && age <= 21)) {
+  } else if(((day == "Tuesday") || (day == "Thurday")) || ((age >= 12) && (age <= 21))) {
     document.getElementById('answer').innerHTML = "You get a student discount.";
 
     // age is negative
